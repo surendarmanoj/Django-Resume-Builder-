@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>Show Info</title>
+  </head>
+  <body>
+    <h1>Report Of Products</h1>
+        
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Details</th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      
+                     
+
+                        <tr>
+                            <td>ID </td>
+                            <td>{{ products.id }}</td>
+                        </tr>
+                        <tr>
+                            <td>Name </td>
+                            <td>{{ products.name }}</td>
+                        </tr>
+                        <tr>
+                            <td>Phone </td>
+                            <td>{{ products.phone }}</td>
+                        </tr>
+                        <tr>
+                            <td>Email </td>
+                            <td>{{ products.email }}</td>
+                        </tr>
+                        <tr>
+                            <td>School </td>
+                            <td>{{ products.school }}</td>
+                        </tr>
+                        <tr>
+                            <td>Degree </td>
+                            <td>{{ products.degree }}</td>
+                        </tr>
+                        <tr>
+                            <td>University </td>
+                            <td>{{ products.university }}</td>
+                        </tr>
+                        <tr>
+                            <td>Skill </td>
+                            <td>{{ products.skill }}</td>
+                        </tr>
+                        <tr>
+                            <td>About Me </td>
+                            <td>{{ products.about_you }}</td>
+                        </tr>
+                        <tr>
+                            <td>Experience </td>
+                            <td>{{ products.previous_work }}</td>
+                        </tr>
+
+                      
+                     
+                    </tbody>
+                  </table>
+
+            </div>
+        </div>
+
+        <a class="btn btn-primary m-2" href="{% url 'pdf:download' products.pk%}">Create PDF</a>
+
+    </div>
+
+
+
+
+  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>
+   

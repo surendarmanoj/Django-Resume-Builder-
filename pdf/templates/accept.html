@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row md-5">
+            <div class="col-md-12">
+                <h1>CV Builder</h1>
+                <hr />
+            </div>
+            </div>
+        </div>
+    <div class="container">
+    <div class="row md-5">
+        <div class="col-md-7">
+    <form method="POST">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name = "name" placeholder="Enter your name">
+          <label for="name">Phone</label>
+          <input type="text" class="form-control" id="phone" name = "phone" placeholder="Enter your Phone Number">
+          <label for="name">Email</label>
+          <input type="text" class="form-control" id="email" name = "email" placeholder="Enter your Email">
+          <label for="name">School</label>
+          <input type="text" class="form-control" id="school" name = "school" placeholder="Enter your Schools">
+          <label for="name">Degree</label>
+          <input type="text" class="form-control" id="degree" name = "degree" placeholder="Enter your Degree">
+          <label for="name">University</label>
+          <input type="text" class="form-control" id="university" name = "university" placeholder="Enter your University">
+          <label for="name">Skill</label>
+          <textarea class="form-control" id="skill" name = "skill" placeholder="Enter your Skills"></textarea>
+        <label for="name">About You</label>
+        <textarea class="form-control" id="about_you" name = "about_you" placeholder="About You"></textarea>
+        <label for="name">Previous Experience</label>
+        <textarea class="form-control" id="previous_work" name = "previous_work" placeholder="Enter your Previous Experience"></textarea>
+            <br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
